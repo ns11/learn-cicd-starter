@@ -1,28 +1,35 @@
-![code coverage badge](https://github.com/ns11/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+
 ## Contributing
 
 ## 🤝 Contributing
+![code coverage badge](https://github.com/ns11/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+## 🤝 Contributing
 
-# learn-cicd-starter (Notely)
-
-This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
-
-## Local Development
-
-Make sure you're on Go version 1.20+.
-
-Create a `.env` file in the root of the project with the following contents:
+### Clone the repo
 
 ```bash
-PORT="8080"
+git clone https://github.com/xyz/zipzod@latest
+cd zipzod
 ```
 
-Run the server:
+### Build the project
 
 ```bash
-go build -o notely && ./notely
+go build
 ```
 
-*This starts the server in non-database mode.* It will serve a simple webpage at `http://localhost:8080`.
+### Run the project
 
-You do *not* need to set up a database or any interactivity on the webpage yet. Instructions for that will come later in the course!
+```bash
+./zipzod -i ./input -o ./output.zip
+```
+
+### Run the tests
+
+```bash
+go test ./...
+```
+
+### Submit a pull request
+
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
